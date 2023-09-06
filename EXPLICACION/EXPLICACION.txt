@@ -1,0 +1,87 @@
+
+¿Qué es un administrador de paquetes?
+Un administrador de paquetes es una pieza de software que maneja la instalación, actualización y eliminación de paquetes de software informático.
+
+Un administrador de paquetes almacena paquetes en una ubicación central en el disco duro o unidad de red. Permite que varios usuarios compartan una única copia del paquete.
+
+Los administradores de paquetes, como npm install y Yarn Add, suelen estar basados ​​en CLI. Por lo general, las aplicaciones JavaScript tienen muchas dependencias y esas dependencias son administradas por un administrador de paquetes.
+
+El nodo usa NPM de forma predeterminada. Sin embargo, NPM no tiene algunas características avanzadas que sean ideales para aplicaciones más avanzadas, o es lento al instalar paquetes o resolver dependencias de paquetes.
+
+Yarn y PNPM, que son administradores de paquetes creados por la comunidad, nacieron para resolver el problema anterior. En los últimos años, el hilo se ha vuelto más lento, pero hoy en día es probablemente la opción más popular.
+
+En el mundo de la gestión de paquetes, PNPM fue el último reproductor en aparecer y agilizó la instalación y actualización de paquetes.
+
+Comparación de NPM, YARN y PNPM
+NPM es un administrador de paquetes para JavaScript desarrollado originalmente por el proyecto Node.js. Permite a los desarrolladores compartir código más fácilmente entre diferentes proyectos y utilizar el código de otras personas en sus propios proyectos.
+
+Yarn es un administrador de paquetes para JavaScript y fue desarrollado por Facebook. Es rápido, confiable y seguro.
+
+PNPM es un nuevo administrador de paquetes para JavaScript que se creó sobre npm para simplificar el proceso de instalación de paquetes en aplicaciones de nodo. PNPM es una alternativa a NPM. Sigue los mismos principios que NPM pero tiene algunas características adicionales que lo hacen más poderoso que su predecesor.
+
+
+OJO EN ESTE PROYECTO USARMOS YARN  (DEBEMOS INSTALARLO YA DEBES TENER NODEJS)
+
+C:\Windows\system32>npm install --global yarn
+
+added 1 package in 523ms
+
+C:\Windows\system32>yarn --version
+1.22.19
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================
+
+usamos VITEJS PARA CREAR EL PROYECTO DE REACTJS
+
+
+creamos 1 carpeta 
+ahi entramos con el cmd o terminal de visual (recordar tener instalado yarn)
+- usaremos yarn
+
+- EN EL CMD poner esto  , esto solo creara la carpeta con vite 
+    yarn create vite
+
+    √ Project name: ... eccomerce_react
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+- entramos al CMD pero a la carpeta creada  , esto instalara las dependencias y paquetes
+    yarn 
+    
+
+ - luego para ejecuatar debes poner esto en el servidor  , poner esto en el cmd
+    yarn dev   
+
+
+
+-- debemos instalar tailwind===================
+- en el cmd  usamos yarn q remplaza al npm
+      yarn add -D tailwindcss postcss autoprefixer
+- el cmd poner esto = 
+   npx tailwindcss init -p      
+
+
+- leer seguir los siguientes pasos
+   https://tailwindcss.com/docs/guides/vite    
+
+
+
+
+
+
+-===========================================================================
+   -- tambien instalamos los iconos para reactjs  (https://react-icons.github.io/react-icons)
+   Incluya íconos populares en sus proyectos de React fácilmente con react-icons, que utiliza importaciones de ES6 que le permiten incluir solo los íconos que utiliza su proyecto.
+     
+    - pone en el cmd esto (recordar q usamos yarn) para instalar el paquete de icons
+          yarn add react-icons

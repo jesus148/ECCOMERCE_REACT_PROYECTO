@@ -20,15 +20,33 @@ Yarn es un administrador de paquetes para JavaScript y fue desarrollado por Face
 PNPM es un nuevo administrador de paquetes para JavaScript que se creó sobre npm para simplificar el proceso de instalación de paquetes en aplicaciones de nodo. PNPM es una alternativa a NPM. Sigue los mismos principios que NPM pero tiene algunas características adicionales que lo hacen más poderoso que su predecesor.
 
 
+paquete de software :
+La forma más común es referirse a múltiples programas de software que se agrupan y venden como un conjunto. También existe el uso de "paquete de software" para describir un conjunto de software que realiza una función particular, por ejemplo, paquetes de software de Adobe o paquetes de software de contabilidad
+
+
+
+https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/ (LEER MAS)
+
+
+
+======================================================================================================================
+
+
+CONFIGURACION DEL PROYECTO
+
+
+
+
+INSTALANDO CON EL CMD(recomendable 1 vez)
 OJO EN ESTE PROYECTO USARMOS YARN  (DEBEMOS INSTALARLO YA DEBES TENER NODEJS)
+RECORDAR QUE YARN ES CASI IGUAL AL NPM PERO MAS ACTUAL Y + RAPIDO
 
 C:\Windows\system32>npm install --global yarn
 
 added 1 package in 523ms
-
+-- para ver la version
 C:\Windows\system32>yarn --version
 1.22.19
-
 
 
 
@@ -43,8 +61,9 @@ C:\Windows\system32>yarn --version
 
 usamos VITEJS PARA CREAR EL PROYECTO DE REACTJS
 
+https://vitejs.dev/guide/   (COMANDO PA INSTALAR VITE buscar la parte Scaffolding Your First Vite Project)
 
-creamos 1 carpeta 
+creamos 1 carpeta con windows
 ahi entramos con el cmd o terminal de visual (recordar tener instalado yarn)
 - usaremos yarn
 
@@ -63,11 +82,12 @@ ahi entramos con el cmd o terminal de visual (recordar tener instalado yarn)
     yarn dev   
 
 
-
--- debemos instalar tailwind===================
-- en el cmd  usamos yarn q remplaza al npm
+-===========================================================================
+-- debemos instalar tailwind================================================================
+repetir los pasos de mi repo https://github.com/jesus148/Proyecto-Usando-React-ViteJS/blob/master/src/TailwindCssUse.txt
+- en el cmd  usamos yarn q remplaza al npm oner esto = 
       yarn add -D tailwindcss postcss autoprefixer
-- el cmd poner esto = 
+- el cmd cuando usamos 
    npx tailwindcss init -p      
 
 
@@ -80,8 +100,24 @@ ahi entramos con el cmd o terminal de visual (recordar tener instalado yarn)
 
 
 -===========================================================================
-   -- tambien instalamos los iconos para reactjs  (https://react-icons.github.io/react-icons)
+   -- tambien instalamos los iconos para reactjs  (https://react-icons.github.io/react-icons) ver + abajo estan los comandos
    Incluya íconos populares en sus proyectos de React fácilmente con react-icons, que utiliza importaciones de ES6 que le permiten incluir solo los íconos que utiliza su proyecto.
      
     - pone en el cmd esto (recordar q usamos yarn) para instalar el paquete de icons
           yarn add react-icons
+
+   - para usar los icons de esa pagina
+      - elige el tipo de icono en el lado izquierdo (la barra de nav de mostrara todos los tipos)
+      - una vez selecciones el tipo , dirigite arriba en el import de ese tipo , import { IconName } from "react-icons/fc";(ejemplo)
+      -y en tu componente arriba en los import copiarlo ,luego llamar ese icono IconName  donde quieros usarlo en el componente
+      - para cada componente deberas importar 
+      - para cada boton fijarte ya que pertenecen a difirentes import y debera volver a importar
+
+
+
+
+
+
+
+
+

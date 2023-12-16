@@ -68,6 +68,7 @@ function App() {
 {/* ESCRITORIO  */}
 {/* grid-cols-1: son columnas para que se puedan ver ,solo 1 columna  */}
 {/* col-span: son para unir colmnas */}
+
 <main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8'>
    <div className='lg:col-span-6 '>
     <header className='p-4'>

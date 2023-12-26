@@ -34,6 +34,9 @@ https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/ (LEER MAS)
 
 CONFIGURACION DEL PROYECTO
 
+RUTA DEL PROYECTO ES UN EJEMPLO ME GUIE DE ESO 
+https://github.com/jotredev/dashboard-store-v1 (GIT URL)
+https://www.youtube.com/watch?v=jGBE75m6YOE&t=4583s (VIDEO)
 
 
 

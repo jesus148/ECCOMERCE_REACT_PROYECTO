@@ -38,7 +38,8 @@ const Sidebar = (props) =>{
     //PARTE DEL RENDERIZADO
 
     //${ showMenu ? "left-0" :"-left-full"} usamos el ternario
-    return <div className={ `bg-[#1F1D28]  fixed lg:left-0 top-0 w-28 h-full flex  flex-col justify-between rounded-tr-xl rounded-br-xl -left-full ${ showMenu ? "left-0" :"-left-full"}`}> 
+    //lg:left-0 : apartir del lg se puede ver pa escritorio
+    return <div className={ `bg-[#1F1D28]  fixed lg:left-0 top-0 w-28 h-full flex  flex-col justify-between rounded-tr-xl rounded-br-xl  ${ showMenu ? "left-0 z-50" :"-left-full"}  `}> 
 
 
 

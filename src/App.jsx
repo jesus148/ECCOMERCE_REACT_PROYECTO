@@ -82,11 +82,11 @@ function App() {
 {/* flex flex-col : cajas flexibles , en forma de columna */}
 {/* gap-4 : separa ya sea columnas o filas en una grilla o tabla  osea es el espacio de filas y columnas en una grilla*/}
 
-<main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 '>
+<main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4 '>
    <div className='lg:col-span-6 '>
 
     {/* HEADER */}
-    <header className='p-4'>
+    <header >
 
 
 {/* TITULO Y EL INPUT PARA BUSCAR , para centrar este div */}
@@ -96,6 +96,7 @@ function App() {
         <p className='text-gray-500'>14 diciembre del 2023</p>
       </div>
       <form>
+      {/* {`w-full  ${ showMenu ? "z-10" : "z-50" } : al hacer movil dar click el input el bar sale primero */}
         <div className={`w-full  ${ showMenu ? "z-10" : "z-50" }  relative  `}>
         <IoIosSearch className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-300' />
         {/* dando estilos al cursos del input , osea donde se escribe */}
@@ -108,7 +109,7 @@ function App() {
 
  {/* TABS */}
 
-<nav className='text-gray-300 flex items-center  justify-between border-b'>
+<nav className='text-gray-300 flex items-center  justify-between  lg:justify-start border-b mb-6 lg:gap-4'>
   <a href="#" className='relative py-2 pr-2 before:w-1/2 before:h-1 before:absolute before:bg-[#52F577] before:left-0 before:rounded-full before:-bottom-[1px] text-[#52F577]'>Comida Caliente</a>
   <a href="#" className='py-2 pr-2 '>Platos Frios</a>
   <a href="#" className='py-2 pr-2'>Sopa</a>
@@ -116,18 +117,41 @@ function App() {
 </nav>
 
 
-{/* title content */}
 
-<div className='flex items-center justify-between'>
+    
+    
+    </header>
+
+    {/* title content */}
+
+<div className='flex items-center justify-between mb-8'>
   <h2 className='text-xl text-gray-300'> Elegir Platos</h2>
   <button className='flex items-center gap-4 text-gray-300 bg-[#1F1D2B] py-2 px-4 rounded-lg'>
   <FaChevronDown  />
 
   </button>
 </div>
-    
-    
-    </header>
+
+{/* content  */}
+
+<div>
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-3 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p>20 platos disponibles</p>
+  </div>
+
+
+
+  
+</div>
+
+
+
    </div>
 
 

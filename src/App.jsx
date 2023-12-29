@@ -82,7 +82,7 @@ function App() {
 {/* flex flex-col : cajas flexibles , en forma de columna */}
 {/* gap-4 : separa ya sea columnas o filas en una grilla o tabla  osea es el espacio de filas y columnas en una grilla*/}
 
-<main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4 '>
+<main className='lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4  pb-20 '>
    <div className='lg:col-span-6 '>
 
     {/* HEADER */}
@@ -132,17 +132,83 @@ function App() {
   </button>
 </div>
 
-{/* content  */}
 
-<div>
+
+
+
+{/* CONTENIDO  */}
+
+<div className='p-8  grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3 '>
+
+
+
+
+
   {/* card */}
-  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-3 text-center text-gray-300'>
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
  {/* cuando el elemento esta en public solo lo importar defrente */}
  {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
        <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
-       <p> Plato con pollo frito y palta </p>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
        <span> $2,29</span>
-       <p>20 platos disponibles</p>
+       <p className='text-gray-600'>20 platos disponibles</p>
+  </div>
+
+
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p className='text-gray-600'>20 platos disponibles</p>
+  </div>
+
+
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p className='text-gray-600'>20 platos disponibles</p>
+  </div>
+
+
+
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p className='text-gray-600'>20 platos disponibles</p>
+  </div>
+
+
+
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p className='text-gray-600'>20 platos disponibles</p>
+  </div>
+
+  
+  {/* card */}
+  <div className='bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300'>
+ {/* cuando el elemento esta en public solo lo importar defrente */}
+ {/* object-cover : El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento */}
+       <img src="pollo.png" alt="" className='w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full'/>
+       <p className='text-xl'> Plato con pollo frito y palta </p>
+       <span> $2,29</span>
+       <p className='text-gray-600'>20 platos disponibles</p>
   </div>
 
 

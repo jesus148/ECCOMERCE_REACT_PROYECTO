@@ -224,6 +224,8 @@ function App() {
    </div>
 
 
+{/* 
+    parte rigth */}
 
    <div className='lg:col-span-2  fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full z-50'>
     {/* ORDENES  */}

@@ -83,7 +83,10 @@ function App() {
 {/* gap-4 : separa ya sea columnas o filas en una grilla o tabla  osea es el espacio de filas y columnas en una grilla*/}
 
 <main className='lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4  pb-20 '>
-   <div className='lg:col-span-6 '>
+
+
+
+   <div className='lg:col-span-6 md:p-8'>
 
     {/* HEADER */}
     <header >
@@ -222,7 +225,25 @@ function App() {
 
 
 
-   <div className='lg:col-span-2  fixed lg:static right-0 '>hola</div>
+   <div className='lg:col-span-2  fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full z-50'>
+    {/* ORDENES  */}
+      <div className='relative pt-16 text-gray-300 p-8'>
+
+      <IoCloseCircleOutline className='absolute left-4 top-4 p-4 box-content text-gray-300 bg-[#262837] rounded-full text-xl'/>
+      <h1 className='text-2xl my-4'>Ordenes #151416</h1>
+      <div>
+        <button className='bg-[#4BC22BFF] text-white py-2 px-4 rounded-xl'>
+           Cenar
+        </button>
+        <button className='text-[#4BC22BFF] py-2 px-4 rounded-xl border border-gray-400'>
+           Vamos
+        </button>
+        <button className='text-[#4BC22BFF] py-2 px-4 rounded-xl border border-gray-400'>
+           Delivery
+        </button>
+      </div>
+      </div>
+   </div>
 
 
 

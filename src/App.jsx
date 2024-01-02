@@ -45,6 +45,13 @@ function App() {
   }
 
 
+  
+
+
+  // FORMA DE UTLIZAR LOS CLASSNAME :NO ES RECOMDABLE 
+  // osea esta constante se usara dentro de un class name que dara casi el mimso resultado 
+  const classBtn= "text-[#4BC22BFF] py-2 px-4 rounded-xl border border-gray-400";
+
 
 
 
@@ -233,13 +240,18 @@ function App() {
 
       <IoCloseCircleOutline className='absolute left-4 top-4 p-4 box-content text-gray-300 bg-[#262837] rounded-full text-xl'/>
       <h1 className='text-2xl my-4'>Ordenes #151416</h1>
-      <div>
+      <div className='flex items-center gap-4 flex-wrap'>
         <button className='bg-[#4BC22BFF] text-white py-2 px-4 rounded-xl'>
            Cenar
         </button>
         <button className='text-[#4BC22BFF] py-2 px-4 rounded-xl border border-gray-400'>
            Vamos
         </button>
+
+        {/* FORMA DE UTILIZAR EL CLASSNAME LINEA 51 ATRAVES DE UNA CONSTANTE */}
+        {/* <button className={classBtn}>
+           Delivery
+        </button> */}
         <button className='text-[#4BC22BFF] py-2 px-4 rounded-xl border border-gray-400'>
            Delivery
         </button>

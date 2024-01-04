@@ -121,6 +121,9 @@ repetir los pasos de mi repo https://github.com/jesus148/Proyecto-Usando-React-V
 
 
 
+STYLED COMPONENT : css nativo para crear componentes en reactsj
+
+
 
 
 

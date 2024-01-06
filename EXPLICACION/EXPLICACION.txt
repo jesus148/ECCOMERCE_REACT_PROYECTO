@@ -125,5 +125,9 @@ STYLED COMPONENT : css nativo para crear componentes en reactsj
 
 
 
+OJO FRONTEND RESOLVIENDO PORBLEMAS EN EL CODIGO 
+cuandos tengas problemas solo debes ponerle colores a las cajas para diferenciar
+
+
 
 

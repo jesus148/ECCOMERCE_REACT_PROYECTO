@@ -5,8 +5,8 @@ import {useState} from 'react';
 
 
 //iconos
-import { IoMdMenu , IoIosSearch} from "react-icons/io";
-import { FaUser , FaPlusCircle , FaChevronDown } from "react-icons/fa";
+import { IoMdMenu , IoIosSearch  } from "react-icons/io";
+import { FaUser , FaPlusCircle , FaChevronDown, FaRegTrashAlt } from "react-icons/fa";
 import { BiSolidCircleThreeQuarter } from "react-icons/bi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
@@ -245,11 +245,12 @@ function App() {
 
    <div className='lg:col-span-2  fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full z-50'>
     {/* ORDENES  */}
-      <div className='relative pt-16 text-gray-300 p-8'>
+      <div className='relative pt-16 text-gray-300 p-8 h-full'>
        {/* PARTE DE ARRIBA DEL CAR ENCABEZADO */}
       <IoCloseCircleOutline className='absolute left-4 top-4 p-4 box-content text-gray-300 bg-[#262837] rounded-full text-xl'/>
       <h1 className='text-2xl my-4'>Ordenes #151416</h1>
 
+{/* BOTONOS DEBAJO  */}
       <div className='flex items-center gap-4 flex-wrap mb-8'>
         <button className='bg-[#4BC22BFF] text-white py-2 px-4 rounded-xl'>
            Cenar
@@ -271,7 +272,7 @@ function App() {
 
 
 
-      {/* car */}
+      {/* car  item*/}
 
     <div>
 
@@ -286,7 +287,7 @@ function App() {
       {/* product */}
 
       <div className='bg-[#262837] p-4 rounded-xl'>
-        <div className='grid grid-cols-6 mb-2 '>
+        <div className='grid grid-cols-6 mb-4'>
 
 
         {/* product description */}
@@ -303,7 +304,7 @@ function App() {
       
         {/* cantidad o qty  */}
         <div className='text-center'>
-          <span>2</span>
+          <span>2</span>  
         </div>
         {/* price */}
         <div className='text-center'>
@@ -311,11 +312,14 @@ function App() {
         </div>
         </div>
         {/* nota  */}
-        <div className='grid grid-cols-6'>
-          <form className='col-span-4'>
-              <input type="text" className='bg-[#1F1D2B] py-1 px-4 rounded-lg' placeholder='orden anotada'/>
+        <div className='grid grid-cols-6 items-center gap-2'>
+          <form className='col-span-5'>
+              <input type="text" className='bg-[#1F1D2B] py-1 px-4 rounded-lg outline-none' placeholder='orden anotada'/>
 
           </form>
+          <div >
+            <button className='border border-red-500 p-2 rounded-lg'><FaRegTrashAlt  className=' text-red-500'/></button>
+          </div>
 
         </div>
 
@@ -331,6 +335,27 @@ function App() {
       </div>
 
 
+
+{/* submit payment - envio pago */}
+
+    <div className='bg-[#262837] absolute  w-full  p-4 bottom-0 left-0'> 
+    <div className='flex items-center justify-between mb-4'>
+      <span className='text-gray-500'> Discount</span>
+      <span> $0</span>
+
+     </div>
+
+
+     <div className='flex items-center justify-between'>
+      <span  className='text-gray-500'> Discount</span>
+      <span> $0</span>
+
+     </div>
+    
+    
+    
+    
+    </div>
 
 
 
@@ -345,6 +370,7 @@ function App() {
 
 
 
+  
 
 
 
